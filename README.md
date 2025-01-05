@@ -18,14 +18,11 @@
 ## Installation
 
 - Clone this repository on your local computer
-- configure .env as needed
 - Run the `docker compose up -d`.
 
 ```shell
-git clone https://github.com/sprintcube/docker-compose-lamp.git
-cd docker-compose-lamp/
-cp sample.env .env
-// modify sample.env as needed
+git clone https://github.com/JR-CIEL-1-RESEAU/Docker-LAMP.git
+cd Docker-LAMP/
 docker compose up -d
 // visit localhost
 ```
@@ -37,10 +34,7 @@ Your LAMP stack is now ready!! You can access it via `http://localhost`.
     - [Docker](https://docs.docker.com/install/) 
     - [Docker Compose](https://docs.docker.com/compose/install/)
 
-## APPLICATION 
-### Lancement de l'application
-- **Cloner** le repos à l'aide *git clone @repos*
-- **Se placer** au niveau d'arborescence du fichier *docker-compose up*
+
 
 
 
