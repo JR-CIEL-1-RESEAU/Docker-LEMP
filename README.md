@@ -24,10 +24,13 @@
 git clone https://github.com/JR-CIEL-1-RESEAU/Docker-LAMP.git
 cd Docker-LAMP/
 docker compose up -d
-// visit localhost
+// visit http://localhost:8080
+Lorsque vous avez fini tapper la commande  docker-compose stop vous permettra d'arrêter l'ensemble des services d'une stack ou 
+docker-compose down vous permettra de détruire l'ensemble des ressources d'une stack ;
 ```
 
-Your LAMP stack is now ready!! You can access it via `http://localhost`.
+
+Your LAMP stack is now ready!! You can access it via `http://localhost:8080`.
 
 ## PREREQUIS 
 - Logiciels installés sur la machine hôte:
