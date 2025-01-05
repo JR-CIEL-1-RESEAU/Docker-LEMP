@@ -1,19 +1,9 @@
 
-# Modele OSI 
+# LAMP stack built with Docker Compose
 <p align="center">
-<img src="osi.png" alt="Photo de démonstration" width="300">
+<img src="osx-docker-lamp.png" alt="Photo de démonstration" width="300">
 </p>
 
-
-## PREREQUIS 
-- Logiciels installés sur la machine hôte:
-    - [Docker](https://docs.docker.com/install/) 
-    - [Docker Compose](https://docs.docker.com/compose/install/)
-
-## APPLICATION 
-### Lancement de l'application
-- **Cloner** le repos à l'aide *git clone @repos*
-- **Se placer** au niveau d'arborescence du fichier *docker-compose up*
 
 ### Services fournis (fichier docker-compose.yml )
 
@@ -25,38 +15,36 @@
 
 `Cette configuration est modifiable, il faudra modifier le fichier docker-compose.yml si besoin`.
 
- ## TRAVAIL DEMANDE
- ### Modele OSI
- - **Visualiser** [Vidéo C'est quoi le TCP_IP _.mp4](https://drive.google.com/file/d/1YvrVi-OUch4QSDTG2ucONhIHlGuUWi6_/view?usp=sharing)
+## Installation
 
- ### Prise en main de l'outils de capture et d'analyse réseau `Wireshark`
- - **Consulter** [Interface](https://www.it-connect.fr/decouverte-de-linterface-de-wireshark/)
- - **Consulter** [Vidéo de prise en main](https://drive.google.com/file/d/13Q2XU9oKv6Eza9brkqgTODV2PSDz-XRr/view?usp=sharing)
+- Clone this repository on your local computer
+- configure .env as needed
+- Run the `docker compose up -d`.
 
- ### Travaux Dirigés  
-  - **Réaliser** [TD 1](https://github.com/JR-CIEL-1-RESEAU/OSI/archive/refs/tags/avec_zip.zip)
-  - **Réaliser** [TD 2](https://github.com/user-attachments/files/18267633/TD_Sortie_reseau.zip)
-    #### Activité : Test de la fragmentation
+```shell
+git clone https://github.com/sprintcube/docker-compose-lamp.git
+cd docker-compose-lamp/
+cp sample.env .env
+// modify sample.env as needed
+docker compose up -d
+// visit localhost
+```
 
-    - Lancez une capture puis la commande « ping –l 2000 172.16.15.254 » et arrêtez la capture lorsque l'invite de commande réapparaît à la console.
+Your LAMP stack is now ready!! You can access it via `http://localhost`.
 
-    - Analysez la partie fragmentation des deux premières trames et donnez le fragment d'offset et les bit MF (More fragments) et DF (Don't fragment) pour chacune ainsi que la longueur.
+## PREREQUIS 
+- Logiciels installés sur la machine hôte:
+    - [Docker](https://docs.docker.com/install/) 
+    - [Docker Compose](https://docs.docker.com/compose/install/)
 
-    - Justifiez les résultats de la fragmentation en particulier les valeurs des bits, les offsets et les longueurs totales dans les deux trames.
+## APPLICATION 
+### Lancement de l'application
+- **Cloner** le repos à l'aide *git clone @repos*
+- **Se placer** au niveau d'arborescence du fichier *docker-compose up*
 
-    - Exécutez la commande suivante : « ping -f –l 2000 172.16.15.254 » et justifiez le message d'erreur affiché.et Activité : Analyse de trames ICMP
 
-    - L'objectif de cette activité est d'analyser différentes trames ICMP :Lancez une capture puis exécutez la commande « ping 172.16.0.1. » et enfin arrêtez la capture. par ping 172.16.100.1
 
- - ####  **Capture d'identifiants d'un compte [PURE-FTP](https://github.com/stilliard/docker-pure-ftpd/blob/master/README.md#example-usage-once-inside) d'un développeur WEB**
-       Afin de développer le site web dont il est en charge, le développeur n'a accès en général qu'à un répertoire du serveur WEB qui publie le site via un service  FTP.
-       L'idée est ici de vous metre à la place d'un Hackeur qui aurait la possibilité de viusalier le traffic réseau sur l'ordinateur de développeur WEB.
-       Vous (le Hackeur) allez essayer de capturer les identifiants de connexions. 
-    - **Verifier** la présence du service FTP et son état `up` via `docker-compose ps`,
-    - **Lancer** une capture Wireshark sur l'interface réseau adéquate.
-    - **Consulter** ([Wireshark - View FTP usernames and passwords ](https://www.freekb.net/Article?id=133)),
-    - **Capturer** les identifiants du développeur WEB avec Wireshark.
-    - **Se connecter**  au service FTP à l'aide des cces identifiants.
+
 
 
 
