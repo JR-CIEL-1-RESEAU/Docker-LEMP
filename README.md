@@ -1,7 +1,7 @@
 
-# LAMP stack built with Docker Compose
+# LEMP stack et FTP avec Docker Compose
 <p align="center">
-<img src="osx-docker-lamp.png" alt="Photo de démonstration" width="300">
+<img src="LEMP.png" alt="Photo de démonstration" width="300">
 </p>
 
 
