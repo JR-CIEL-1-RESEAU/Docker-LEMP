@@ -17,9 +17,6 @@
 
 ## Installation
 
-- Clone this repository on your local computer
-- Run the `docker compose up -d`.
-
 ```shell
 git clone https://github.com/JR-CIEL-1-RESEAU/Docker-LAMP.git
 cd Docker-LAMP/
