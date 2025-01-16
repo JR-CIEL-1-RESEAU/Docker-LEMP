@@ -5,7 +5,8 @@
 </p>
 
 
-### Services fournis (fichier docker-compose.yml )
+
+## Services fournis (fichier docker-compose.yml )
 
 - **nginx** : Serveur HTTP exposé sur le port `8080`, utilisant une configuration personnalisée et les fichiers de `./code`.
 - **php** : Exécute le code PHP des fichiers de `./code`.
@@ -14,6 +15,11 @@
 - **ftp** : Serveur FTP avec l'utilisateur `bob` et pass `12345`, partageant `./code` et exposant les ports `21` et `30000-30009`.
 
 `Cette configuration est modifiable, il faudra modifier le fichier docker-compose.yml si besoin`.
+
+## PREREQUIS 
+- Logiciels installés sur la machine hôte:
+    - [Docker](https://docs.docker.com/install/) 
+    - [Docker Compose](https://docs.docker.com/compose/install/)
 
 ## Installation
 
@@ -33,10 +39,7 @@
 
 Your LAMP stack is now ready!! You can access it via `http://localhost:8080`.
 
-## PREREQUIS 
-- Logiciels installés sur la machine hôte:
-    - [Docker](https://docs.docker.com/install/) 
-    - [Docker Compose](https://docs.docker.com/compose/install/)
+
 
 
 
