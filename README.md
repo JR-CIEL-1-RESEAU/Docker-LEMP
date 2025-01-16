@@ -1,5 +1,5 @@
 
-# LEMP stack et FTP avec Docker Compose
+# LNMP stack et FTP avec Docker Compose
 <p align="center">
 <img src="LEMP.png" alt="Photo de démonstration" width="300">
 </p>
